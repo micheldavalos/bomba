@@ -10,6 +10,11 @@ class Bomba
     int _high;
     int _v;
 public:
+    /// Bomba
+    ///
+    /// @param high - Digital Pin for HIGH signal.
+    /// @param low - Digital Pin for LOW signal.
+    /// @param pwm - PWM Pin for 0 - 255 signal.
     Bomba(int high, int low, int pwm)
     {
         _low = low;
@@ -35,9 +40,13 @@ public:
         analogWrite(_pwm, 0);
     }
 
+    /*!
+     *
+     * @param v - 0 - 100 value for %
+     */
     void velocity(int v)
     {
-        _v = v;
+        _v = v * 255/100;
         analogWrite(_pwm, _v);
     }
 
