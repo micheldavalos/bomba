@@ -30,16 +30,6 @@ public:
         analogWrite(_pwm, 0);
     }
 
-    void on()
-    {
-        analogWrite(_pwm, 1);
-    }
-
-    void off()
-    {
-        analogWrite(_pwm, 0);
-    }
-
     /*!
      *
      * @param v - 0 - 100 value for %
