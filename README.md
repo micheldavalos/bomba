@@ -14,3 +14,5 @@ hbridge.velocity(100); /// 0 - 100% value
 Links:
 
 https://howtomechatronics.com/tutorials/arduino/arduino-dc-motor-control-tutorial-l298n-pwm-h-bridge/
+
+http://tronixstuff.com/2014/11/25/tutorial-l298n-dual-motor-controller-modules-and-arduino/
