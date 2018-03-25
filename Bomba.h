@@ -1,21 +1,21 @@
-#ifndef Bomba_H
-#define Bomba_H
+#ifndef HBridge_H
+#define HBridge_H
 
 #include <Arduino.h>
 
-class Bomba
+class HBridge
 {
     int _pwm;
     int _low;
     int _high;
     int _v;
 public:
-    /// Bomba
+    /// HBridge
     ///
     /// @param high - Digital Pin for HIGH signal.
     /// @param low - Digital Pin for LOW signal.
     /// @param pwm - PWM Pin for 0 - 255 signal.
-    Bomba(int high, int low, int pwm)
+    HBridge(int high, int low, int pwm)
     {
         _low = low;
         _high = high;
